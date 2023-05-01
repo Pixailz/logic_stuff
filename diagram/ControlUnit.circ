@@ -1221,6 +1221,18 @@
       <text dominant-baseline="central" font-family="FiraCode Nerd Font Mono" font-size="5" text-anchor="middle" x="70" y="93">r</text>
       <text dominant-baseline="central" font-family="FiraCode Nerd Font Mono" font-size="5" text-anchor="middle" x="50" y="93">a</text>
       <text dominant-baseline="central" font-family="FiraCode Nerd Font Mono" font-size="5" text-anchor="middle" x="60" y="93">d</text>
+      <visible-hexdigit height="20" path="/HEX_DISP_16b(650,100)/Hex Digit Display(190,110)" stroke-width="0" width="14" x="33" y="28"/>
+      <visible-hexdigit height="20" path="/HEX_DISP_16b(650,100)/Hex Digit Display(230,110)" stroke-width="0" width="14" x="47" y="28"/>
+      <visible-hexdigit height="20" path="/HEX_DISP_16b(650,100)/Hex Digit Display(270,110)" stroke-width="0" width="14" x="61" y="28"/>
+      <visible-hexdigit height="20" path="/HEX_DISP_16b(650,100)/Hex Digit Display(310,110)" stroke-width="0" width="14" x="75" y="28"/>
+      <visible-hexdigit height="20" path="/HEX_DISP_16b(650,140)/Hex Digit Display(190,110)" stroke-width="0" width="14" x="33" y="48"/>
+      <visible-hexdigit height="20" path="/HEX_DISP_16b(650,140)/Hex Digit Display(230,110)" stroke-width="0" width="14" x="47" y="48"/>
+      <visible-hexdigit height="20" path="/HEX_DISP_16b(650,140)/Hex Digit Display(270,110)" stroke-width="0" width="14" x="61" y="48"/>
+      <visible-hexdigit height="20" path="/HEX_DISP_16b(650,140)/Hex Digit Display(310,110)" stroke-width="0" width="14" x="75" y="48"/>
+      <visible-hexdigit height="20" path="/HEX_DISP_16b(650,180)/Hex Digit Display(190,110)" stroke-width="0" width="14" x="33" y="68"/>
+      <visible-hexdigit height="20" path="/HEX_DISP_16b(650,180)/Hex Digit Display(230,110)" stroke-width="0" width="14" x="47" y="68"/>
+      <visible-hexdigit height="20" path="/HEX_DISP_16b(650,180)/Hex Digit Display(270,110)" stroke-width="0" width="14" x="61" y="68"/>
+      <visible-hexdigit height="20" path="/HEX_DISP_16b(650,180)/Hex Digit Display(310,110)" stroke-width="0" width="14" x="75" y="68"/>
       <circ-anchor facing="east" x="50" y="100"/>
       <circ-port dir="in" pin="220,220" x="50" y="100"/>
       <circ-port dir="in" pin="220,240" x="60" y="100"/>
@@ -1442,6 +1454,9 @@
     <comp lib="7" loc="(540,540)" name="HEX_DISP_DEC"/>
     <comp lib="7" loc="(540,670)" name="HEX_DISP_DEC"/>
     <comp lib="7" loc="(590,270)" name="T_BOX"/>
+    <comp lib="7" loc="(650,100)" name="HEX_DISP_16b"/>
+    <comp lib="7" loc="(650,140)" name="HEX_DISP_16b"/>
+    <comp lib="7" loc="(650,180)" name="HEX_DISP_16b"/>
     <wire from="(220,220)" to="(280,220)"/>
     <wire from="(220,240)" to="(280,240)"/>
     <wire from="(220,250)" to="(220,260)"/>
@@ -1497,11 +1512,17 @@
     <wire from="(590,270)" to="(590,420)"/>
     <wire from="(590,420)" to="(590,550)"/>
     <wire from="(590,550)" to="(590,680)"/>
+    <wire from="(620,100)" to="(620,110)"/>
+    <wire from="(620,100)" to="(650,100)"/>
     <wire from="(620,110)" to="(620,120)"/>
     <wire from="(620,120)" to="(620,430)"/>
     <wire from="(620,120)" to="(650,120)"/>
+    <wire from="(630,140)" to="(630,160)"/>
+    <wire from="(630,140)" to="(650,140)"/>
     <wire from="(630,160)" to="(630,560)"/>
     <wire from="(630,160)" to="(650,160)"/>
+    <wire from="(640,180)" to="(640,200)"/>
+    <wire from="(640,180)" to="(650,180)"/>
     <wire from="(640,200)" to="(640,690)"/>
     <wire from="(640,200)" to="(650,200)"/>
   </circuit>
@@ -1822,7 +1843,7 @@
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="COMPUTER"/>
     <a name="clabelfont" val="SansSerif bold 5"/>
-    <a name="simulationFrequency" val="1.0"/>
+    <a name="simulationFrequency" val="2.0"/>
     <comp lib="2" loc="(340,360)" name="Splitter">
       <a name="bit1" val="0"/>
       <a name="bit10" val="0"/>
@@ -1964,7 +1985,7 @@
       <a name="addrWidth" val="16"/>
       <a name="appearance" val="logisim_evolution"/>
       <a name="contents">addr/data: 16 16
-8517
+1234 8490 0 84c8 5 8007
 </a>
       <a name="dataWidth" val="16"/>
     </comp>
